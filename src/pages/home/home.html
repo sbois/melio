@@ -1,0 +1,248 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>L'histoire</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content overflow-scroll="false" class="fond" padding style="background-image:url('assets/imgs/fond-transp.jpg');
+background-attachment:fixed;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+flex: 1;
+flex-direction: column;">
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <h1 class="slide-title" style="color:rgba(230, 35, 35, 0.836);">Mélio</h1>
+      <img src="assets/imgs/bebe-pleure.GIF" class="slide-image"/>
+      <p>Découvre l'histoire de ma naissance
+        <ion-icon name="arrow-forward"></ion-icon></p>
+      <!--
+      <button ion-button large clear icon-end color="primary">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button> -->
+    </ion-slide>
+    <ion-slide>
+      
+      <img src="assets/imgs/mario-reve-snes.gif" class="slide-image"/>
+      <h2 class="slide-title">Mercredi</h2>
+      <p>
+        Tandis que tout le monde dormait à points fermés<br>à 4h00 du matin le signal fut donnée.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/en-voiture.gif" class="slide-image"/>
+      <p>
+        Tranquillement papa et maman se rendent à l'hôpital.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/pousser.gif" class="slide-image"/>
+      <p>
+        7 heures plus tard,<br>malgré l'aide du médecin,<br><b>je ne ne sors toujours pas</b>.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/alert.gif" class="slide-image"/>
+      <p>
+        Tout à coup,<br>l'équipe médicale se rend compte<br>qu'un <b>problème grave</b><br>
+        m'empêche de sortir.
+      </p>
+    </ion-slide>
+    
+    <ion-slide>
+      
+      <img src="assets/imgs/red-alert.gif" class="slide-image"/>
+      <p>
+        Maman est transportée en <br>"<b>urgence code rouge</b>" <br>au bloc opératoire<br>
+        
+      </p>
+    </ion-slide>
+    
+    <ion-slide>
+      
+      <img src="assets/imgs/cesarienne.gif" class="slide-image"/>
+      <p>
+        Maman subit une césarienne en urgence : <br>
+        l'équipe à <b>15 min max pour me sauver</b>.<br>
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/attente.gif" class="slide-image"/>
+      <p>
+        Pendant ce temps, papa patiente.<br>
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/calme.gif" class="slide-image"/>
+      <p>
+        Au bout de 10 looonnnggguuueeesss minutes, <br>je sort du bloc.
+        L'équipe continue de me réanimer : <br><b>je ne respirais plus à ma naissance</b>.
+        <br><b>Papa reste calme...</b>
+      </p>
+    </ion-slide>
+
+
+    <ion-slide>
+      
+      <img src="assets/imgs/panic-pingouin.gif" class="slide-image"/>
+      <p>
+        On dit à papa que maman a perdu beaucoup de sang<br>
+        qu'elle doit rester en réanimation 2 heures<br>
+        Papa semble un petit peu tendu...
+      </p>
+    </ion-slide>
+
+
+    <ion-slide>
+      
+      <img src="assets/imgs/empty-mind.gif" class="slide-image"/>
+      <p>
+        Papa décide de se calmer et de se détendre.
+      </p>
+    </ion-slide>
+
+
+    <ion-slide>
+      
+      <img src="assets/imgs/direction-trousseau.gif" class="slide-image"/>
+      <p>
+        12 heures après ma naissance, <b>l'ambulance m'emmène à Paris en observation</b>.
+        Maman et moi pouvons nous voir que quelques minutes avant que je parte.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/represente.gif" class="slide-image"/>
+      <p>
+        Papa fait bonne figure devant maman et mes frères.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/doit.gif" class="slide-image"/>
+      <p>
+        Papa les rassure.... comme il peut....
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/retour-provins.gif" class="slide-image"/>
+      <p>
+        24 heures plus tard on me rammène voir ma maman.
+      </p>
+    </ion-slide>
+
+
+    <ion-slide>
+      
+      <img src="assets/imgs/occupe-maison.gif" class="slide-image"/>
+      <p>
+        Pendant 3 jours malgré l'inquiétude, les insomnies et la migraine, <br>
+        papa s'occupe de tout à la maison.
+      </p>
+    </ion-slide>
+
+      
+    <ion-slide>
+      
+      <img src="assets/imgs/course.gif" class="slide-image"/>
+      <p>
+        Fait les courses...
+      </p>
+    </ion-slide>
+
+
+    <ion-slide>
+      
+      <img src="assets/imgs/bravo.gif" class="slide-image"/>
+      <p>
+        Félicitant maman ou mes frères pour toute pensée positive<br>
+        (je me demande s'il va être aussi bizarre avec moi.....)
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/pensees-positives.gif" class="slide-image"/>
+      <p>
+        J'ai ressenti pendant tout ce temps, <b>tout plein de bonnes énergies</b><br>
+        ça m'a beaucoup aidé
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img src="assets/imgs/lundimatin.gif" class="slide-image"/>
+      <h2 class="slide-title">Lundi</h2>
+      <p>
+        Papa s'est levé à 5h00, maman lui annonce que nous quittons l'hôpital ce matin.
+      </p>
+    </ion-slide>
+
+
+    <ion-slide>
+      
+      <img src="assets/imgs/sun-anim.gif" class="slide-image" style="width:50%;"/>
+      <p>
+        Finalement maman et moi, rentrons dans notre maison il est....18h00
+        Après toute ses péripéties, <b>je me sens bien dans ma maison</b>.          
+      </p>
+    </ion-slide>
+
+
+    <ion-slide>
+      
+      <img src="assets/imgs/voiture-petite.gif" class="slide-image"/>
+      <p>
+        Papa et maman disent qu'ils vont devoir changer de voiture.<br>
+        <b>Ils veulent que je sois plus en sécurité</b>.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+        
+        <img src="assets/imgs/voiture-famille.gif" class="slide-image"/>
+        <p>
+          Du coup, on se dit que peut-être, tu peux aider notre famille a réaliser <b>son rêve de mobilité</b><br>
+        </p>
+      </ion-slide>
+
+      <ion-slide>
+          
+          <img src="assets/imgs/mignon-kiss.gif" class="slide-image"/>
+          <p>
+            On sait que <b>tu es plein d'amour</b> à la base<br>
+            Rien que pour ça on te fait <b>un gros bisous</b><br>
+            <b>Si tu veux nous aider</b> clique sur :
+          </p>
+          <ion-buttons >
+              <a href="https://paypal.me/pools/c/7Zj0vYEAAt"><button ion-button color="primary">
+                J'apporte mon aide&nbsp;💖</button></a>
+            </ion-buttons>
+        </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

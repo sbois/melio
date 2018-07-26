@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>A propos</ion-title>
+  </ion-navbar>
+</ion-header>
+<style>
+  .fond {
+    background-image:url('assets/imgs/fond.jpg');
+    background-attachment:local;
+    background-size: 100% 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    flex: 1;
+    flex-direction: column;
+  
+}
+  </style>
+  
+<ion-content overflow-scroll="false" class="fond" >
+  
+  <!--
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div> 
+-->
+  
+  
+  <p style="text-align:center;"><img src="assets/imgs/about.jpg" style="float: center;">
+  </p>
+  
+</ion-content>
